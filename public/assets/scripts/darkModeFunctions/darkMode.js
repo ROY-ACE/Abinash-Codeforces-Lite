@@ -58,7 +58,7 @@ const injectDarkModeCSS = () => {
                 filter: brightness(0.99) !important;
             }
 
-            img[title="Codeforces"], img[alt="ITMO University"], img.tex-formula {
+            img[title="Codeforces"], img[alt="ITMO University"], img.tex-formula, img.tex-graphics {
                 filter: none !important;
             }
 
