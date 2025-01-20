@@ -5,7 +5,7 @@ const injectDarkModeCSS = () => {
   styleElement = document.createElement("style");
   styleElement.innerHTML = `
             html {
-                background-color: #131313 !important;
+                background-color: #000000 !important;
             }
                 
             body {
@@ -58,7 +58,7 @@ const injectDarkModeCSS = () => {
                 filter: brightness(0.99) !important;
             }
 
-            img[title="Codeforces"], img[alt="ITMO University"] {
+            img[title="Codeforces"], img[alt="ITMO University"], img.tex-formula {
                 filter: none !important;
             }
 
