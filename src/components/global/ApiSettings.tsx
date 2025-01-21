@@ -11,9 +11,6 @@ const ApiSettings: React.FC = () => {
 
     const validateAndSaveKey = async () => {
         if (!tempKey.trim()) {
-            // It's OK for users not to have an API key for Sulu.
-            // They can still use the Judge0 without the API key but their requests will be rate limited.
-            // If they ever hit the rate limit, they can add an API key to avoid the rate limit.
             return;
         }
 

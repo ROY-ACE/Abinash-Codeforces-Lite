@@ -109,14 +109,10 @@ This comprehensive system combines coding, testing, and submission in one seamle
 🚀 You're all set! The code execution feature is now ready to use.
 
 ```
-You have been provided with $10 of free credit in the Judge0CE Sulu API Key.
+You have been provided with limited credit for the IP.
 
-This allows you to execute up to:
-  - 20,000 APi requests
-
-Once your API key's limit is reached, please consider:
+Once your IP’s credit limit is reached, please consider:
   1. Upgrading your plan to continue using the API.
-  2. Creating a new API key using an alternate account for additional free credits.
 ```
 
 ---

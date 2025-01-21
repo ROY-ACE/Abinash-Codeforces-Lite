@@ -109,17 +109,13 @@ export const useCodeExecution = (editor: React.RefObject<any>) => {
     // Unified API handlers
     const makeJudge0CERequest = async (endpoint: string, options: any, apiKey: string) => {
         const controller = executionState.startNew();
-        // Don't use Judge0 CE via Sulu for GET requests since it's rate limited when user is not authenticated, instead
-        // use Judge0 CE directly for GET requests and Sulu for POST requests.
         const baseUrl = options.method === 'GET' ? 'https://ce.judge0.com' : 'https://judge0-ce.p.sulu.sh';
         return fetch(`${baseUrl}/${endpoint}`, {
             ...options,
             headers: {
                 'Accept': 'application/json',
                 ...options.headers,
-                'Authorization': apiKey ? `Bearer ${apiKey}` : '' // Only add Authorization header if apiKey is present.
-                                                                  // This will work because Judge0 is allowed to be accessed without an API key via Sulu but is rate limited.
-                                                                  // If users ever hit the rate limit, they can add an API key to avoid the rate limit.
+                'Authorization': apiKey ? `Bearer ${apiKey}` : ''
             },
             signal: controller.signal
         });
