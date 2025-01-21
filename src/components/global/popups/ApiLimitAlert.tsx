@@ -10,10 +10,10 @@ interface ApiLimitAlertProps {
 const ApiLimitAlert: React.FC<ApiLimitAlertProps> = ({ isOpen, setIsOpen }) => {
     return (
         <PopupModal isOpen={isOpen} setIsOpen={setIsOpen}>
-            <PopupBox 
-                isOpen={isOpen} 
-                setIsOpen={setIsOpen} 
-                title="API Limit Exceeded" 
+            <PopupBox
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                title="API Limit Exceeded"
                 customClass="max-w-xs"
                 popupHeight="h-auto"
             >
@@ -22,8 +22,8 @@ const ApiLimitAlert: React.FC<ApiLimitAlertProps> = ({ isOpen, setIsOpen }) => {
                         API rate limit exceeded.
                     </p>
                     <div className="mb-6 text-sm">
-                        <a 
-                            href="https://platform.sulu.sh/portal/consumer/dashboard?period=7_days"
+                        <a
+                            href="https://platform.sulu.sh/apis/judge0"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium"
