@@ -75,19 +75,20 @@ const Main: React.FC<MainProps> = ({ setShowOptions, theme, tabIndent }) => {
             }
         };
 
-
         setTimeout(() => {
             getCurrentSlug();
         }, 100);
 
         const handleKeyPress = (event: KeyboardEvent) => {
             if (event.ctrlKey && event.key === 'Enter') {
+                event.stopPropagation();
+                event.preventDefault();
                 handleSubmission(editor, setIsSubmitting);
+                return false;
             }
         };
-
-        document.addEventListener('keydown', handleKeyPress);
-        return () => document.removeEventListener('keydown', handleKeyPress);
+        document.addEventListener('keydown', handleKeyPress, true);
+        return () => document.removeEventListener('keydown', handleKeyPress, true);
     }, []);
 
     useEffect(() => {
@@ -95,11 +96,11 @@ const Main: React.FC<MainProps> = ({ setShowOptions, theme, tabIndent }) => {
             if (isRunning) return;
             if (event.ctrlKey && event.key === "'") {
                 const apiKey = localStorage.getItem('judge0CEApiKey');
-                if(!apiKey) {
+                if (!apiKey) {
                     alert('Please add your API to use the run code feature.');
                     return;
                 }
-                if(!currentSlug) {
+                if (!currentSlug) {
                     alert('Please select a problem to run code.');
                     return;
                 }
@@ -122,10 +123,10 @@ const Main: React.FC<MainProps> = ({ setShowOptions, theme, tabIndent }) => {
     }, [currentSlug, testCases]);
     return (
         <div className='flex flex-col w-full justify-start items-center h-full dark:bg-[#111111]'>
-            <ApiLimitAlert 
-            isOpen={showApiLimitAlert} 
-            setIsOpen={setShowApiLimitAlert}
-        />
+            <ApiLimitAlert
+                isOpen={showApiLimitAlert}
+                setIsOpen={setShowApiLimitAlert}
+            />
             <TopBar
                 theme={theme as "light" | "dark"}
                 handleClick={() => handleSubmission(editor, setIsSubmitting)}
