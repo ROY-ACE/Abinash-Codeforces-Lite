@@ -15,8 +15,12 @@
 
 ---
 
-# Features
+# Credits
+<a href="https://github.com/MaanasSehgal/Codeforces-Lite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MaanasSehgal/Codeforces-Lite" />
+</a>
 
+# Features
 ## 1. Advanced Code Editor with Execution & Storage Capabilities
 
 ![Code Editor](/public/assets/images/preview2.png)
