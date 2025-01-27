@@ -1,10 +1,17 @@
 # Codeforces Lite
-
 #### A sidebar Chrome extension that enhances Codeforces, making it a more productive platform for competitive programmers.
 
 [![Chrome Web Store](https://i.imgur.com/iswHnpJ.png)](https://chromewebstore.google.com/detail/codeforces-lite/hgcgfmgjkfjmhoebifgmbfipinkkjgco)
 
 ---
+
+### Table of Contents
+* [Overview](#overview)
+* [Features](#features)
+* [How to get API Key?](#how-to-get-api-key)
+* [Local Setup for Developers](#local-setup-for-developers)
+* [How to Contribute?](#how-to-contribute)
+* [Know the Developers](#developers)
 
 # Overview
 
@@ -14,11 +21,6 @@
 #### From enhanced UI elements and dark theme, to a fully functional code editor, this extension provides everything you need for a seamless coding experience on Codeforces.
 
 ---
-
-# Credits
-<a href="https://github.com/MaanasSehgal/Codeforces-Lite/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=MaanasSehgal/Codeforces-Lite" />
-</a>
 
 # Features
 ## 1. Advanced Code Editor with Execution & Storage Capabilities
@@ -181,7 +183,7 @@ Once your IP’s credit limit is reached, please consider:
     - Properly list down the changes in your PR message.
 6. Your PR will be reviewed and merged upon approval.
 
-## Core Developers
+## Developers
 
 ![UI Improvement Example](/public/assets/images/preview5.png)
 
@@ -191,7 +193,9 @@ This extension was primarily developed by **Maanas Sehgal** and **Devendra Surya
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------ |
 | **Maanas Sehgal**        | [LinkedIn](https://www.linkedin.com/in/maanassehgal/)        | [GitHub](https://github.com/MaanasSehgal)        |
 | **Devendra Suryavanshi** | [LinkedIn](https://www.linkedin.com/in/devendrasuryavanshi/) | [GitHub](https://github.com/devendrasuryavanshi) |
-| **Anish Goenka** | [LinkedIn](https://www.linkedin.com/in/anish-goenka-0b49a923b/) | [GitHub](https://github.com/phANTom2303) |
 
+<a href="https://github.com/MaanasSehgal/Codeforces-Lite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MaanasSehgal/Codeforces-Lite" />
+</a>
 
 # Thanks for using our extension!
