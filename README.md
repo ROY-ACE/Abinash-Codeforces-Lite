@@ -198,4 +198,4 @@ This extension was primarily developed by **Maanas Sehgal** and **Devendra Surya
   <img src="https://contrib.rocks/image?repo=MaanasSehgal/Codeforces-Lite" />
 </a>
 
-# Thanks for using our extension!
+# Thanks for using our extension.
